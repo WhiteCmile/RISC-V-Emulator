@@ -10,3 +10,8 @@ set(SOURCES
 )
 
 add_executable(emulator ${SOURCES})
+
+target_compile_options(emulator
+    PRIVATE
+        -g -O2
+)
